@@ -1,4 +1,5 @@
 # python 3.7.1
+-*- coding: UTF-8 -*-
 import os
 
 os.system('apt update && upgrade')
